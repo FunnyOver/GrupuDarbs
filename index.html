@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="app.css" media="screen" />  
+    </head>
+  <body>
+    <script src="script.js"></script>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">MM</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Sākums</a>
+                      <a class="nav-link" href="#">Reģistrācija</a>
+                      <a class="nav-link" href="#">Opcijas</a>
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </body>
+  
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Sākums</a>
+                        <a class="nav-link" href="#">Reģistrācija</a>
+                        <a class="nav-link" href="#">Opcijas</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <h1 style="font-size: 36px; font-weight: bold;">MegaMalka</h1>
+                  <p style="font-size: 18px;">Kopā padarīsim Latviju labāku un siltāku, jo kopā ir siltāk</p>
+                  <span style="font-size: 16px; font-style: italic; color: #ff0000;">Uzdevums ir atbalstīt Latvijas trūcīgos iedzīvotājus, radot iespēju saņemt bezmaksas kurināmo ziemai vai arī ziedojot naudu apkures nomaksāšanai.</span>
+              <h2>Ko vēlies izdarīt?</h2>
+              <button onclick="openRegistrationPage()">Piereģistrēties</button>
+                    <div class="donation-area">
+                        <h2>Ziedojumi</h2>
+                        <form>
+                          <div class="form-group">
+                            <input class="form-check-input" type="checkbox" value="" id="donationOption1">
+                            <label class="form-check-label" for="donationOption1">Pieteikties ziedojumiem</label>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-check-input" type="checkbox" value="" id="donationOption2">
+                            <label class="form-check-label" for="donationOption2">Ziedot kurināmo</label>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-check-input" type="checkbox" value="" id="donationOption3">
+                            <label class="form-check-label" for="donationOption3">Ziedot naudu</label>
+                          </div>
+                          <div class="form-group">
+                            <label for="donationAmount">Cik daudz vēlaties ziedot?</label>
+                            <div class="input-group">
+                              <input type="number" class="form-control" id="donationAmount" name="donationAmount">
+                              <div class="input-group-append">
+                                <span class="input-group-text">EUR</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="fullName">Vārds un uzvārds:</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Ievadiet savu vārdu un uzvārdu">
+                          </div>
+                          <div class="form-group">
+                            <label for="phoneNumber">Telefona numurs:</label>
+                            <input class="form-control" type="tel" id="phoneNumber" name="phoneNumber" required>
+                            </div>
+                            <div class="form-group">
+                            <label for="amount">Ziedošanas summa:</label>
+                            <input class="form-control" type="number" id="amount" name="amount" required>
+                            </div>
+                            <div class="form-group">
+                            <label for="paymentMethod">Maksājuma veids:</label>
+                            <select class="form-control" id="paymentMethod" name="paymentMethod" required>
+                            <option value="" selected disabled>Izvēlieties maksājuma veidu</option>
+                            <option value="bankTransfer">Pārskaitījums uz bankas kontu</option>
+                            <option value="creditCard">Kredītkarte</option>
+                            <option value="paypal">PayPal</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                            <label for="comments">Komentāri:</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ziedot</button>
+                            </form>
+                            </div>
+                            </div>
+                            </div>
+                            </section>
+                  
+                  <label for="comments"><b>Komentāri:</b></label>
+<textarea name="comments" id="comments" rows="5" placeholder="Jūsu komentāri..." required></textarea>
+                  
+                </form>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </body>
+  </html>
